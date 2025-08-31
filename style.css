@@ -1,21 +1,35 @@
 body {
   font-family: Arial, sans-serif;
-  background: #eef;
+  background-color: #eef;
   padding: 20px;
+  max-width: 600px;
+  margin: auto;
 }
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
 input, button {
   padding: 10px;
   margin: 10px 0;
+  width: 100%;
+  font-size: 16px;
 }
+
 .flashcard {
   background: #fff;
   padding: 10px;
   margin: 10px 0;
   border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
+
 .correct {
   border: 2px solid green;
 }
+
 .incorrect {
   border: 2px solid red;
 }
