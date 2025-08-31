@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eef;
+  padding: 20px;
+}
+input, button {
+  padding: 10px;
+  margin: 10px 0;
+}
+.flashcard {
+  background: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.correct {
+  border: 2px solid green;
+}
+.incorrect {
+  border: 2px solid red;
+}
