@@ -8,7 +8,7 @@ async function startLearning() {
   const response = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
     headers: {
-      "Authorization": "Bearer YOUR_OPENAI_API_KEY",
+      "Authorization": "Bearer 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",
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
