@@ -1,14 +1,14 @@
 async function startLearning() {
   const topic = document.getElementById("topicInput").value.trim();
   if (!topic) {
-    alert("Please enter a topic.");
+    alert("Por favor, digite um tópico.");
     return;
   }
 
   const response = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
     headers: {
-      "Authorization": "Bearer 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",
+      "Authorization": "Bearer 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",
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
@@ -30,7 +30,7 @@ async function startLearning() {
     const [q, a] = card.split(" - ");
     const div = document.createElement("div");
     div.className = "flashcard";
-    div.innerHTML = `<strong>${q}</strong><br>${a}<br><button onclick="responsiveVoice.speak('${a}')">🔊 Listen</button>`;
+    div.innerHTML = `<strong>${q}</strong><br>${a}<br><button onclick="responsiveVoice.speak('${a}', 'Portuguese Female')">🔊 Ouvir</button>`;
     flashDiv.appendChild(div);
   });
 
